@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto PiP для YouTube</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <span class="logo-icon">📺</span>
+                <h1>Auto PiP</h1>
+            </div>
+            <p class="subtitle">Автоматичний Picture-in-Picture для YouTube</p>
+        </header>
+
+        <main class="main">
+            <div class="status-card">
+                <div class="status-indicator">
+                    <div class="status-dot" id="statusDot"></div>
+                    <span class="status-text" id="statusText">Завантаження...</span>
+                </div>
+                
+                <div class="toggle-container">
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="enableToggle">
+                        <span class="toggle-slider"></span>
+                    </label>
+                    <span class="toggle-label">Автоматичний PiP</span>
+                </div>
+            </div>
+
+            <div class="stats-card">
+                <div class="stat-item">
+                    <span class="stat-icon">📊</span>
+                    <div class="stat-info">
+                        <span class="stat-value" id="youtubeTabsCount">0</span>
+                        <span class="stat-label">YouTube вкладок</span>
+                    </div>
+                </div>
+                
+                <div class="stat-item">
+                    <span class="stat-icon">🎯</span>
+                    <div class="stat-info">
+                        <span class="stat-value" id="pipActivations">0</span>
+                        <span class="stat-label">Активацій PiP</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="actions-card">
+                <button class="action-btn primary" id="manualPiP">
+                    <span class="btn-icon">🎬</span>
+                    Ручна активація PiP
+                </button>
+                
+                <button class="action-btn secondary" id="refreshStats">
+                    <span class="btn-icon">🔄</span>
+                    Оновити статистику
+                </button>
+            </div>
+
+            <div class="info-card">
+                <h3>Як це працює:</h3>
+                <ul class="info-list">
+                    <li>🎯 Автоматично активує PiP при зміні вкладки</li>
+                    <li>⚡ Працює тільки з YouTube відео</li>
+                    <li>🔧 Налаштування зберігаються</li>
+                    <li>📱 Підтримує всі Chromium браузери</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="version">v1.0.0</div>
+            <div class="links">
+                <a href="#" id="helpLink">Допомога</a>
+                <a href="#" id="feedbackLink">Відгук</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

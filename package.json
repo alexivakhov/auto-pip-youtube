@@ -1,0 +1,22 @@
+{
+  "name": "auto-pip-youtube",
+      "version": "1.0.1",
+  "description": "Автоматичний Picture-in-Picture для YouTube відео",
+  "main": "background.js",
+  "scripts": {
+    "build": "node generate-icons.js && node convert-icons.js",
+    "clean": "node cleanup.js"
+  },
+  "keywords": [
+    "chrome-extension",
+    "youtube",
+    "picture-in-picture",
+    "pip",
+    "browser-extension"
+  ],
+  "author": "Auto PiP Team",
+  "license": "MIT",
+  "devDependencies": {
+    "canvas": "^2.11.2"
+  }
+}
