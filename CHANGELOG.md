@@ -1,68 +1,68 @@
-# 📋 Історія змін Auto PiP для YouTube
+# 📋 Changelog for Auto PiP for YouTube
 
 ## [1.0.1] - 2024-01-XX
 
-### 🔧 Виправлення
-- **Виправлено проблему з повторною активацією PiP** після "Back to Tab"
-- Додано відстеження подій `leavepictureinpicture` та `enterpictureinpicture`
-- Покращено логіку скидання `lastActiveTabId` при деактивації PiP
-- Додано перевірку існування вкладок перед активацією PiP
-- Покращено комунікацію між content та background scripts
+### 🔧 Fixes
+- **Fixed issue with repeated PiP activation** after "Back to Tab"
+- Added tracking of `leavepictureinpicture` and `enterpictureinpicture` events
+- Improved logic for resetting `lastActiveTabId` when PiP is deactivated
+- Added tab existence check before PiP activation
+- Improved communication between content and background scripts
 
-### 🎯 Покращення
-- Додано детальне логування для відладки
-- Покращено обробку помилок при активації PiP
-- Додано перевірку стану PiP перед активацією
+### 🎯 Improvements
+- Added detailed logging for debugging
+- Improved error handling during PiP activation
+- Added PiP state check before activation
 
-### 📝 Технічні зміни
-- Оновлено `background.js` з новою логікою відстеження стану
-- Оновлено `content.js` з глобальним відстеженням подій PiP
-- Додано новий тестовий файл `test-pip-fix.html`
+### 📝 Technical Changes
+- Updated `background.js` with new state tracking logic
+- Updated `content.js` with global PiP event tracking
+- Added new test file `test-pip-fix.html`
 
 ---
 
 ## [1.0.0] - 2024-01-XX
 
-### ✨ Перший реліз
-- **Автоматична активація PiP** при зміні вкладки
-- **Ручне керування** через popup інтерфейс
-- **Сучасний дизайн** з анімаціями
-- **Статистика використання**
-- **Підтримка всіх Chromium браузерів**
+### ✨ Initial Release
+- **Automatic PiP activation** when switching tabs
+- **Manual control** through popup interface
+- **Modern design** with animations
+- **Usage statistics**
+- **Support for all Chromium browsers**
 
-### 🎨 Особливості
-- Красива іконка з градієнтним дизайном
-- Адаптивний інтерфейс налаштувань
-- Збереження налаштувань між сесіями
-- Детальна документація та інструкції
+### 🎨 Features
+- Beautiful icon with gradient design
+- Adaptive settings interface
+- Settings saved between sessions
+- Detailed documentation and instructions
 
-### 📁 Файли
-- `manifest.json` - конфігурація розширення
+### 📁 Files
+- `manifest.json` - extension configuration
 - `background.js` - Service Worker
-- `content.js` - Content Script для YouTube
-- `injected.js` - додаткова функціональність
-- `popup.html/css/js` - інтерфейс налаштувань
-- `icons/` - PNG іконки різних розмірів
-- `test.html` - тестовий файл
-- `README.md` - документація
-- `INSTALL.md` - інструкція встановлення
+- `content.js` - Content Script for YouTube
+- `injected.js` - additional functionality
+- `popup.html/css/js` - settings interface
+- `icons/` - PNG icons of various sizes
+- `test.html` - test file
+- `README.md` - documentation
+- `INSTALL.md` - installation instructions
 
 ---
 
-## Плани на майбутнє
+## Future Plans
 
-### 🔮 Версія 1.1.0
-- [ ] Додати налаштування затримки активації
-- [ ] Додати підтримку інших відео платформ
-- [ ] Додати гарячі клавіші
-- [ ] Покращити статистику використання
+### 🔮 Version 1.1.0
+- [ ] Add activation delay settings
+- [ ] Add support for other video platforms
+- [ ] Add hotkeys
+- [ ] Improve usage statistics
 
-### 🔮 Версія 1.2.0
-- [ ] Додати синхронізацію налаштувань між пристроями
-- [ ] Додати темну тему для popup
-- [ ] Додати більше опцій налаштування
-- [ ] Покращити продуктивність
+### 🔮 Version 1.2.0
+- [ ] Add settings synchronization between devices
+- [ ] Add dark theme for popup
+- [ ] Add more configuration options
+- [ ] Improve performance
 
 ---
 
-**Розроблено з ❤️ для спільноти YouTube користувачів**
+**Developed with ❤️ for the YouTube user community**

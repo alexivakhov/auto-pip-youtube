@@ -1,82 +1,82 @@
-# 🚀 Швидке встановлення Auto PiP розширення
+# 🚀 Quick Installation Guide for Auto PiP Extension
 
-## ⚡ 3 кроки до автоматичного PiP для YouTube
+## ⚡ 3 Steps to Automatic PiP for YouTube
 
-### Крок 1: Відкрийте розширення в браузері
+### Step 1: Open Extensions in Browser
 ```
 chrome://extensions/
 ```
 
-### Крок 2: Увімкніть режим розробника
-- Знайдіть перемикач "Режим розробника" у правому верхньому куті
-- Увімкніть його
+### Step 2: Enable Developer Mode
+- Find the "Developer mode" toggle in the top right corner
+- Enable it
 
-### Крок 3: Завантажте розширення
-- Натисніть "Завантажити розпаковане розширення"
-- Виберіть папку "Auto PiP"
-- Натисніть "Виберіть папку"
+### Step 3: Load the Extension
+- Click "Load unpacked extension"
+- Select the "Auto PiP" folder
+- Click "Select folder"
 
-## 🎯 Готово! Тестування
+## 🎯 Ready! Testing
 
-1. **Відкрийте YouTube** і запустіть відео
-2. **Переключіться на іншу вкладку**
-3. **Відео автоматично перейде в PiP режим!** 🎉
+1. **Open YouTube** and start a video
+2. **Switch to another tab** - video automatically goes to PiP mode
+3. **Video automatically switches to PiP mode!** 🎉
 
-## 🔧 Налаштування
+## 🔧 Settings
 
-Клацніть на іконку розширення в панелі інструментів для:
-- ✅ Увімкнення/вимкнення автоматичного PiP
-- ✅ Ручної активації PiP
-- ✅ Перегляду статистики
-- ✅ Отримання допомоги
+Click on the extension icon in the toolbar for:
+- ✅ Toggle automatic PiP on/off
+- ✅ Manual PiP activation
+- ✅ View statistics
+- ✅ Get help
 
-## 📁 Структура файлів
+## 📁 File Structure
 
 ```
 Auto PiP/
-├── manifest.json          # ✅ Конфігурація
-├── background.js          # ✅ Фоновий процес
-├── content.js            # ✅ YouTube скрипт
-├── injected.js           # ✅ Додаткова функціональність
-├── popup.html/css/js     # ✅ Інтерфейс налаштувань
-├── icons/                # ✅ PNG іконки
+├── manifest.json          # ✅ Configuration
+├── background.js          # ✅ Background process
+├── content.js            # ✅ YouTube script
+├── injected.js           # ✅ Additional functionality
+├── popup.html/css/js     # ✅ Settings interface
+├── icons/                # ✅ PNG icons
 │   ├── icon16.png        # ✅ 16x16
 │   ├── icon32.png        # ✅ 32x32
 │   ├── icon48.png        # ✅ 48x48
 │   └── icon128.png       # ✅ 128x128
-├── test.html             # ✅ Тестовий файл
-├── README.md             # ✅ Документація
-└── INSTALL.md            # ✅ Детальна інструкція
+├── test.html             # ✅ Test file
+├── README.md             # ✅ Documentation
+└── INSTALL.md            # ✅ Detailed instructions
 ```
 
-## 🎨 Особливості іконки
+## 🎨 Icon Features
 
-- **Градієнтний дизайн** - червоний до оранжевого
-- **TV символіка** - зображення телевізора
-- **PiP вікно** - зелена область всередині
-- **Текст "PiP"** - чіткий ідентифікатор
-- **Тіні та ефекти** - сучасний вигляд
+- **Gradient design** - red to orange
+- **TV symbolism** - television image
+- **PiP window** - green area inside
+- **"PiP" text** - clear identifier
+- **Shadows and effects** - modern look
 
-## 🐛 Якщо не працює
+## 🐛 If it doesn't work
 
-1. **Перевірте дозволи** - розширення потребує доступ до вкладок
-2. **Перезавантажте YouTube** - оновіть сторінку
-3. **Перевірте консоль** - F12 → Console для помилок
-4. **Спробуйте test.html** - для базової перевірки PiP
+1. **Check permissions** - extension needs tab access
+2. **Reload YouTube page** - refresh the page
+3. **Check console** - F12 → Console for errors
+4. **Try test.html** - for basic PiP testing
 
-## 📱 Підтримувані браузери
+## 📱 Supported Browsers
 
 - ✅ **Google Chrome** (v88+)
 - ✅ **Microsoft Edge** (v88+)
 - ✅ **Brave Browser**
 - ✅ **Opera Browser**
 
-## 🎉 Результат
+## 🎉 Result
 
-Після встановлення:
-- YouTube відео автоматично переходить в PiP при зміні вкладки
-- Повернення на YouTube закриває PiP
-- Зручний інтерфейс для налаштувань
-- Статистика використання
+After installation:
+- YouTube videos automatically switch to PiP when changing tabs
+- Returning to YouTube closes PiP
+- Convenient settings interface
+- Usage statistics
 
-**Насолоджуйтесь автоматичним PiP для YouTube!** 🎬
+**Enjoy automatic PiP for YouTube!** 🎬

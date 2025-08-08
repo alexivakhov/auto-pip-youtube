@@ -1,213 +1,213 @@
-# Auto PiP для YouTube
+# Auto PiP for YouTube
 
-🎯 **Автоматичний Picture-in-Picture для YouTube відео**
+🎯 **Automatic Picture-in-Picture for YouTube videos**
 
-Розширення для браузерів Chromium, яке автоматично переводить YouTube відео в режим Picture-in-Picture при зміні активної вкладки браузера.
+A browser extension for Chromium browsers that automatically switches YouTube videos to Picture-in-Picture mode when changing active browser tabs.
 
-## ✨ Особливості
+## ✨ Features
 
-- 🎬 **Автоматична активація PiP** при зміні вкладки
-- 📱 **Підтримка всіх Chromium браузерів** (Chrome, Edge, Brave, Opera)
-- ⚡ **Швидка робота** без затримок
-- 🔧 **Гнучкі налаштування** через зручний інтерфейс
-- 📊 **Статистика використання** з детальною інформацією
-- 🎨 **Сучасний дизайн** з анімаціями
+- 🎬 **Automatic PiP activation** when switching tabs
+- 📱 **Support for all Chromium browsers** (Chrome, Edge, Brave, Opera)
+- ⚡ **Fast operation** without delays
+- 🔧 **Flexible settings** through a convenient interface
+- 📊 **Usage statistics** with detailed information
+- 🎨 **Modern design** with animations
 
-## 🚀 Встановлення
+## 🚀 Installation
 
-### Для розробників (з вихідного коду)
+### For Developers (from source code)
 
-1. **Клонуйте репозиторій:**
+1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/auto-pip-youtube.git
+   git clone https://github.com/alexivakhov/auto-pip-youtube.git
    cd auto-pip-youtube
    ```
 
-2. **Відкрийте браузер Chrome/Edge і перейдіть до:**
+2. **Open Chrome/Edge browser and go to:**
    ```
    chrome://extensions/
    ```
 
-3. **Увімкніть "Режим розробника"** (перемикач у правому верхньому куті)
+3. **Enable "Developer mode"** (toggle in the top right corner)
 
-4. **Натисніть "Завантажити розпаковане розширення"** і виберіть папку з проектом
+4. **Click "Load unpacked extension"** and select the project folder
 
-5. **Розширення готове до використання!** 🎉
+5. **Extension is ready to use!** 🎉
 
-### Для користувачів (з Chrome Web Store)
+### For Users (from Chrome Web Store)
 
-*Розширення буде доступне в Chrome Web Store після публікації*
+*Extension will be available in Chrome Web Store after publication*
 
-## 📖 Як використовувати
+## 📖 How to Use
 
-### Основне використання
+### Basic Usage
 
-1. **Відкрийте YouTube** і запустіть будь-яке відео
-2. **Переключіться на іншу вкладку** - відео автоматично перейде в PiP режим
-3. **Поверніться на YouTube** - PiP закриється і відео повернеться в звичайний режим
+1. **Open YouTube** and start any video
+2. **Switch to another tab** - video automatically goes to PiP mode
+3. **Return to YouTube** - PiP closes and video returns to normal mode
 
-### Налаштування
+### Settings
 
-1. **Клацніть на іконку розширення** в панелі інструментів
-2. **Увімкніть/вимкніть** автоматичний PiP перемикачем
-3. **Використовуйте кнопку "Ручна активація PiP"** для тестування
-4. **Переглядайте статистику** використання
+1. **Click on the extension icon** in the toolbar
+2. **Enable/disable** automatic PiP with the toggle
+3. **Use "Manual PiP activation" button** for testing
+4. **View statistics** of usage
 
-### Додаткові можливості
+### Additional Features
 
-- **Ручна активація PiP** - кнопка на YouTube сторінці
-- **Статистика** - кількість YouTube вкладок та активацій
-- **Налаштування** - зберігаються між сесіями
+- **Manual PiP activation** - button on YouTube page
+- **Statistics** - number of YouTube tabs and activations
+- **Settings** - saved between sessions
 
-## 🛠️ Технічна інформація
+## 🛠️ Technical Information
 
-### Архітектура
+### Architecture
 
 ```
-├── manifest.json          # Конфігурація розширення
-├── background.js          # Service Worker (фоновий процес)
-├── content.js            # Content Script (на YouTube сторінках)
-├── injected.js           # Injected Script (додаткова функціональність)
-├── popup.html            # Інтерфейс налаштувань
-├── popup.css             # Стилі інтерфейсу
-├── popup.js              # Логіка інтерфейсу
-└── icons/                # Іконки розширення
+├── manifest.json          # Extension configuration
+├── background.js          # Service Worker (background process)
+├── content.js            # Content Script (on YouTube pages)
+├── injected.js           # Injected Script (additional functionality)
+├── popup.html            # Settings interface
+├── popup.css             # Interface styles
+├── popup.js              # Interface logic
+└── icons/                # Extension icons
 ```
 
-### Дозволи
+### Permissions
 
-Розширення використовує наступні дозволи:
+The extension uses the following permissions:
 
-- `activeTab` - доступ до активної вкладки
-- `tabs` - керування вкладками
-- `storage` - збереження налаштувань
-- `scripting` - впровадження скриптів
+- `activeTab` - access to active tab
+- `tabs` - tab management
+- `storage` - settings storage
+- `scripting` - script injection
 
-### Підтримувані браузери
+### Supported Browsers
 
 - ✅ Google Chrome (v88+)
 - ✅ Microsoft Edge (v88+)
 - ✅ Brave Browser
 - ✅ Opera Browser
-- ✅ Chromium-based браузери
+- ✅ Chromium-based browsers
 
-## 🔧 Розробка
+## 🔧 Development
 
-### Структура проекту
+### Project Structure
 
 ```bash
 auto-pip-youtube/
-├── manifest.json          # Конфігурація розширення
-├── background.js          # Фоновий процес
-├── content.js            # Скрипт для YouTube
-├── injected.js           # Додатковий функціонал
-├── popup.html            # Інтерфейс налаштувань
-├── popup.css             # Стилі
-├── popup.js              # Логіка інтерфейсу
-├── icons/                # Іконки
+├── manifest.json          # Extension configuration
+├── background.js          # Background process
+├── content.js            # YouTube script
+├── injected.js           # Additional functionality
+├── popup.html            # Settings interface
+├── popup.css             # Styles
+├── popup.js              # Interface logic
+├── icons/                # Icons
 │   ├── icon16.png
 │   ├── icon32.png
 │   ├── icon48.png
 │   └── icon128.png
-└── README.md             # Документація
+└── README.md             # Documentation
 ```
 
-### Локальна розробка
+### Local Development
 
-1. **Клонуйте репозиторій**
-2. **Встановіть розширення в режимі розробника**
-3. **Внесіть зміни в код**
-4. **Натисніть "Оновити" в chrome://extensions/**
-5. **Тестуйте зміни**
+1. **Clone the repository**
+2. **Install extension in developer mode**
+3. **Make changes to the code**
+4. **Click "Update" in chrome://extensions/**
+5. **Test changes**
 
-### Відладка
+### Debugging
 
-- **Background Script:** Перевірте консоль в chrome://extensions/
-- **Content Script:** Використовуйте DevTools на YouTube сторінці
-- **Popup:** Відкрийте DevTools для popup через контекстне меню
+- **Background Script:** Check console in chrome://extensions/
+- **Content Script:** Use DevTools on YouTube page
+- **Popup:** Open DevTools for popup via context menu
 
-## 🐛 Вирішення проблем
+## 🐛 Troubleshooting
 
-### PiP не працює
+### PiP doesn't work
 
-1. **Перевірте підтримку браузера:**
+1. **Check browser support:**
    ```javascript
    console.log(document.pictureInPictureEnabled);
    ```
 
-2. **Переконайтеся, що відео завантажене:**
-   - Дочекайтеся повного завантаження відео
-   - Спробуйте на різних YouTube відео
+2. **Make sure video is loaded:**
+   - Wait for video to fully load
+   - Try different YouTube videos
 
-3. **Перевірте дозволи розширення:**
+3. **Check extension permissions:**
    - chrome://extensions/
-   - Знайдіть розширення і перевірте дозволи
+   - Find the extension and check permissions
 
-### PiP не активується повторно після "Back to Tab"
+### PiP doesn't activate repeatedly after "Back to Tab"
 
-**Проблема виправлена в версії 1.0.1:**
-- ✅ Додано відстеження подій `leavepictureinpicture`
-- ✅ Додано відстеження подій `enterpictureinpicture`
-- ✅ Покращено логіку скидання `lastActiveTabId`
-- ✅ Додано перевірку існування вкладок
-- ✅ Покращено комунікацію між content та background scripts
+**Fixed in version 1.0.1:**
+- ✅ Added tracking of `leavepictureinpicture` events
+- ✅ Added tracking of `enterpictureinpicture` events
+- ✅ Improved logic for resetting `lastActiveTabId`
+- ✅ Added tab existence check before PiP activation
+- ✅ Improved communication between content and background scripts
 
-### Розширення не активується
+### Extension doesn't activate
 
-1. **Перевірте, чи увімкнено розширення**
-2. **Перезавантажте YouTube сторінку**
-3. **Перевірте консоль на помилки**
+1. **Check if extension is enabled**
+2. **Reload YouTube page**
+3. **Check console for errors**
 
-### Проблеми з продуктивністю
+### Performance Issues
 
-- Розширення оптимізоване для швидкої роботи
-- Використовує мінімум ресурсів
-- Не впливає на продуктивність браузера
+- Extension is optimized for fast operation
+- Uses minimal resources
+- Doesn't affect browser performance
 
-## 🤝 Внесок у проект
+## 🤝 Contributing
 
-Ми вітаємо внесок у розвиток проекту!
+We welcome contributions to the project!
 
-### Як внести свій внесок
+### How to Contribute
 
-1. **Fork репозиторію**
-2. **Створіть feature branch:**
+1. **Fork the repository**
+2. **Create feature branch:**
    ```bash
    git checkout -b feature/amazing-feature
    ```
-3. **Зробіть зміни та commit:**
+3. **Make changes and commit:**
    ```bash
    git commit -m 'Add amazing feature'
    ```
-4. **Push до branch:**
+4. **Push to branch:**
    ```bash
    git push origin feature/amazing-feature
    ```
-5. **Створіть Pull Request**
+5. **Create Pull Request**
 
-### Стандарти коду
+### Code Standards
 
-- Використовуйте ES6+ синтаксис
-- Додавайте коментарі до складного коду
-- Тестуйте зміни перед відправкою
-- Дотримуйтесь існуючого стилю коду
+- Use ES6+ syntax
+- Add comments to complex code
+- Test changes before submitting
+- Follow existing code style
 
-## 📄 Ліцензія
+## 📄 License
 
-Цей проект розповсюджується під ліцензією MIT. Дивіться файл `LICENSE` для деталей.
+This project is distributed under the MIT license. See the `LICENSE` file for details.
 
-## 🙏 Подяки
+## 🙏 Acknowledgments
 
-- YouTube за API та можливості
-- Chromium команда за розширення API
-- Всі контриб'ютори проекту
+- YouTube for API and capabilities
+- Chromium team for extension API
+- All project contributors
 
-## 📞 Підтримка
+## 📞 Support
 
-- **GitHub Issues:** [Створити issue](https://github.com/your-username/auto-pip-youtube/issues)
+- **GitHub Issues:** [Create issue](https://github.com/alexivakhov/auto-pip-youtube/issues)
 - **Email:** support@auto-pip-youtube.com
-- **Discord:** [Приєднуйтесь до серверу](https://discord.gg/auto-pip-youtube)
+- **Discord:** [Join server](https://discord.gg/auto-pip-youtube)
 
 ---
 
-**Розроблено з ❤️ для спільноти YouTube користувачів**
+**Developed with ❤️ for the YouTube user community**
